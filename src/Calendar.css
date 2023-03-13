@@ -1,0 +1,115 @@
+.calendar{
+    border-radius: 10px;
+    width: 480px;
+}
+
+.input-date {
+    border: none;
+    margin-left: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f4feff;
+    box-shadow: 3px 3px 6px #b2967c,
+     -3px -3px 6px #b2967c;
+    transition: 0.3s;
+   }
+   
+   .input-date:focus {
+    background: #f4fbff;
+    box-shadow: inset 3px 3px 6px #c5c5c5,
+       inset -3px -3px 6px #ffffff;
+    transition: 0.3s;
+    color: rgb(48, 48, 48);
+   }
+
+   .react-calendar__month-view__weekdays {
+    text-align: center;
+  }
+
+  .react-calendar__month-view__days__day--neighboringMonth {
+    opacity: 0.65;
+  }
+  .react-calendar__month-view__days__day--weekend {
+    background-color: #ffd6d6;
+  }
+
+  .react-calendar__tile--range {
+    box-shadow: 0 0 6px 2px rgb(249, 139, 139);
+}
+
+
+  button {
+    padding: 15px 25px;
+    margin-top: 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #222831;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: rgb(249, 139, 139);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #ffffff;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+
+   p{
+    font-weight: bold;
+    font-family: monospace;
+   }
+
+   .event-details{
+    margin-top: 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #222831;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+
+   abbr{
+    font-family: monospace;
+    text-decoration: none;
+   }
+
+   label{
+    color: var(--body_color);
+   }
+
+   h3{
+    color: var(--body_color);
+   }
